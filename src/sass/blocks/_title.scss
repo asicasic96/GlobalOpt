@@ -4,5 +4,14 @@
     color: #2e2e2e;
     text-transform: uppercase;
     text-align: center;
+    line-height: 22px;
+    &_sub {
+        font-size: 21px;
+        font-weight: 300;
+        text-transform: none;
+    }
+    &_white {
+        color: #fff;
+    }
 }
   

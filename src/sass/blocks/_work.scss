@@ -1,0 +1,32 @@
+.work {
+    padding-top: 50px;
+    max-height: 620px;
+    &__wrapper {
+        margin-top: 25px;
+        display: grid;
+        grid-template: minmax(320px, auto) / repeat(3, 360px);
+        justify-content: center;
+        column-gap: 25px;
+        &-item {
+            img {
+                width: 100%;
+            }
+            display: grid;
+            grid-template: 215px minmax(22px, auto) minmax(120px, auto) / 360px ;
+            grid-auto-rows: minmax(22px, auto);
+            row-gap: 10px;
+        }
+        &-title {
+            font-size: 18px;
+            color: $main_color;
+            font-weight: 700;
+            text-align: center;
+        }
+        &-subtitle {
+            font-size: 14px;
+            font-weight: 300;
+            color: #3a3a3a;
+            text-align: center;
+        }
+    }
+}

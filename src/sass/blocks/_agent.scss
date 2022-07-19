@@ -1,0 +1,12 @@
+.agent {
+    padding-top: 60px;
+    min-height: 342px;
+    background: url('../img/bgagent.png') center center / cover no-repeat;
+    &__wrapper {
+        min-height: 215px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

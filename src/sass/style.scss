@@ -14,7 +14,16 @@
     margin: 0 auto;
 } */
 
+.strip {
+    margin: 16px auto;
+    width: 150px;
+    height: 1px;
+    background-color: $main_color;
+}
+
 @import 'blocks/promo';
 @import 'blocks/btn';
 @import 'blocks/title';
 @import 'blocks/advantages';
+@import 'blocks/work';
+@import 'blocks/agent';

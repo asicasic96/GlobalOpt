@@ -1,16 +1,21 @@
 .advantages {
     padding-top: 60px;
-    height: 590px;
+    min-height: 590px;
     background-color: rgb(243, 243, 243);
     .title {
         margin-bottom: 30px;
     }
     &__wrapper {
+        margin-top: 10px;
         display: grid;
         grid-template: minmax(20px, auto) minmax(60px, auto) / 65px 450px;
+        grid-auto-rows: minmax(20px, auto) minmax(60px, auto);
         justify-content: center;
         align-content: center;
         gap: 1px 20px;
+        img {
+            width: 100%;
+        }
         &-img {
             grid-row: 1 / 3;
         }
