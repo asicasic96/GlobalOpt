@@ -1,4 +1,5 @@
 .promo {
+    min-height: 900px;
     height: 100vh;
     padding-top: 23px;
     background: url("../img/bg.png") center center / cover no-repeat;
@@ -16,6 +17,7 @@
             border-right: none;
         }
         &-item {
+            position: relative;
             padding-right: 20px;
             border-right: 1px dotted #fff;
         }
@@ -24,9 +26,24 @@
             color: #ffffff;
             text-decoration: none;
             transition: all .6s;
+            &:after {
+                transition: all .6s;
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 1px;
+                background-color: $main_color;
+                left: 0;
+                bottom: 0;
+            }
             &:hover {
+                transition: all .6s;
                 color: $main_color;
-                text-decoration: underline;
+                &:after {
+                    transition: all .6s;
+                    width: 30%;
+                }
+                /* text-decoration: underline; */
             }
         }
     }

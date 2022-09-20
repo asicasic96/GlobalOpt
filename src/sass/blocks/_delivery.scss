@@ -1,0 +1,53 @@
+.delivery {
+    min-height: 952px;
+    margin-top: 58px;
+    &__wrapper {
+        margin-top: 14px;
+        display: grid;
+        justify-content: center;
+        grid-template: minmax(300px, auto) / repeat(4, 260px);
+        grid-auto-rows: minmax(300px, auto);
+        column-gap: 35px;
+        row-gap: 15px;
+    }
+    &__border {
+        border: 1px solid #c7c7c7;
+        padding: 2px;
+        height: 100%;
+    }
+    &__header {
+        width: 100%;
+        background-color: #25333C;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+    &__bottom {
+        img {
+            display: block;
+            margin: 15px auto;
+        }
+    }
+    &__text1 {
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 240px;
+        span {
+            font-size: 28px;
+            text-transform: none;
+            color: $main_color;
+        }
+    }
+    &__text2 {
+        text-align: center;
+        font-size: 14px;
+        width: 240px;
+    }
+    &__butn {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
