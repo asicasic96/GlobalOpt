@@ -80,7 +80,7 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="title">Преимущества работы с GlobalOpt</div>
+            <div class="title title_up">Преимущества работы с GlobalOpt</div>
             <div class="row row-cols-2">
                 <div class="advantages__wrapper">
                     <img src="icons/advantages/1.png" alt="1" class="advantages__wrapper-img">
@@ -128,7 +128,7 @@
 
     <section class="work">
         <div class="container">
-            <div class="title">Наша работа - больше чем просто доставка</div>
+            <div class="title title_up">Наша работа - больше чем просто доставка</div>
             <div class="strip"></div>
             <div class="title title_sub">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза и ваших требований по срокам и бюджету.</div>
             <div class="work__wrapper">
@@ -163,19 +163,19 @@
 
     <section class="delivery">
         <div class="container">
-            <div class="title">Цены на любой вариант доставки</div>
+            <div class="title title_up">Цены на любой вариант доставки</div>
             <div class="strip"></div>
-            <div class="title title_sub">Перевозки грузов на дальние расстояния без каких-либо ограничений. Любой груз доставим вовремя.</div>
+            <div class="title title_sub">Перевозки грузов на дальние расстояния без каких-либо ограничений.<br>Любой груз доставим вовремя.</div>
             <div class="delivery__wrapper">
-                <div class="delivery__border">
-                    <div class="delivery__item">
+                <div class="delivery__item">
+                    <div class="delivery__border">
                         <div class="delivery__header">Доставка морем</div>
                         <div class="delivery__bottom">
                             <img src="icons/delivery/1.png" alt="Avia">
                             <div class="delivery__text1">Доставка 35-50 дней<br><span>от 0,3$ за 1 кг</span></div>
                             <div class="delivery__text2">Морские перевозки грузов из Китая в Россию за 35 дней с прохождением таможни</div>
                         </div>
-                        <div class="delivery__butn"><button class="butn">ПОДРОБНЕЕ</button></div>
+                        <div class="delivery__butn"><button class="butn butn__delivery">ПОДРОБНЕЕ</button></div>
                     </div>
                 </div>
                 <div class="delivery__item">
@@ -186,7 +186,7 @@
                             <div class="delivery__text1">Доставка 15-28 дней<br><span>от 1$ за 1 кг</span></div>
                             <div class="delivery__text2">ЖД перевозки грузов из Китая в Россию от 2 недель с прохождением таможни</div>
                         </div>
-                        <div class="delivery__butn"><button class="butn">ПОДРОБНЕЕ</button></div>
+                        <div class="delivery__butn"><button class="butn butn__delivery">ПОДРОБНЕЕ</button></div>
                     </div>
                 </div>
                 <div class="delivery__item">
@@ -197,7 +197,7 @@
                             <div class="delivery__text1">Доставка 12-20 дней<br><span>от 1$ за 1 кг</span></div>
                             <div class="delivery__text2">Автоперевозки грузов из Китая в Россию от 2 недель с прохождением таможни</div>
                         </div>
-                        <div class="delivery__butn"><button class="butn">ПОДРОБНЕЕ</button></div>
+                        <div class="delivery__butn"><button class="butn butn__delivery">ПОДРОБНЕЕ</button></div>
                     </div>
                 </div>
                 <div class="delivery__item">
@@ -208,14 +208,102 @@
                             <div class="delivery__text1">Доставка 1-12 дней<br><span>от 6$ за 1 кг</span></div>
                             <div class="delivery__text2">Авиаперевозки грузов из Китая в Россию до 2 недель с прохождением таможни</div>
                         </div>
-                        <div class="delivery__butn"><button class="butn butn_delivery">ПОДРОБНЕЕ</button></div>
+                        <div class="delivery__butn"><button class="butn butn__delivery">ПОДРОБНЕЕ</button></div>
                     </div>
                 </div>
-            </div> 
+            </div>
+
+            <div class="title consultation__title">Заказать бесплатную консультацию</div>
+
+            <form action="mailer/smart.php" id="consultation-form" class="consultation">
+                <div class="consultation__wrapper">
+                    <div class="consultation__img"><img src="icons/consultation.png" alt="consultation"></div>
+                    <div class="consultation__item"><input name="name" placeholder="Ваше имя" type="text"></div>
+                    <div class="consultation__item"><input name="phone" placeholder="Ваш номер телефона" type="tel"></div>
+                    <div class="consultation__item"><input name="email" placeholder="Ваш E-mail" type="email"></div>
+                    <div class="consultation__butn">
+                        <button class="butn">Отправить заявку</button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="thanks" class="modal-thanks">
+                <div class="modal-thanks__wrapper">
+                    <div class="modal-thanks__close">&#10006;</div>
+                    <div class="modal-thanks__header"><span>С</span>пасибо за вашу заявку<span>!</span></div>
+                    <div class="modal-thanks__footer"><span>С</span>овсем скоро я с вами свяжусь<span>!</span></div>
+                </div>
+                <div class="modal-thanks__overlay"></div>
+            </div>
+
         </div>
     </section>
 
+    <section class="manager">
+        <div class="container">
+            <img src="icons/manager.png" alt="manager">
+            <div class="title title_white">Менеджеры компании</div>
+            <div class="title title_sub title_white">Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок, организуют прямые поставки от завода-изготовителя.</div>
+        </div>
+    </section>
+
+    <section class="scheme">
+        <div class="container">
+            <div class="title">Схема работы с нами</div>
+            <div class="scheme__wrapper">
+                <div class="scheme__item">
+                    <img src="icons/scheme/1.png" alt="scheme">
+                    <div class="scheme__title">Заявка</div>
+                    <div class="scheme__subtitle">Вы оставляете заявку на нашем сайте или звоните нам</div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/2.png" alt="scheme">
+                    <div class="scheme__title">Аналитика доставки</div>
+                    <div class="scheme__subtitle">Мы просчитываем варианты доставки Вашего груза</div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/3.png" alt="scheme">
+                    <div class="scheme__title">Договор</div>
+                    <div class="scheme__subtitle">Заключаем с Вами договор о поставке груза из Китая</div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/4.png" alt="scheme">
+                    <div class="scheme__title">Доставка на наш склад</div>
+                    <div class="scheme__subtitle">Связываемся с Вашим поставщиком в Китае и договариваемся о доставке груза на наш склад </div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/5.png" alt="scheme">
+                    <div class="scheme__title">Проверка груза</div>
+                    <div class="scheme__subtitle">Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на своём складе</div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/6.png" alt="scheme">
+                    <div class="scheme__title">Доставка груза</div>
+                    <div class="scheme__subtitle">Мы перевозим ваш груз до места назначения и производим таможенную очистку</div>
+                </div>
+                <div class="scheme__item">
+                    <img src="icons/scheme/7.png" alt="scheme">
+                    <div class="scheme__title">Оплата</div>
+                    <div class="scheme__subtitle">Оплачиваете доставку груза при получении </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="title title_up">Отзывы наших клиентов</div>
+            <div class="strip"></div>
+            <div class="title title_sub">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова.</div>
+        </div>
+
+    </section>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinputphone.min.js"></script>
     <!-- <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 </html>

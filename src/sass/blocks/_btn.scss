@@ -14,12 +14,14 @@
         border-color: black;
     }
     &_promo {
-        /* display: block; */
         width: 230px;
         font-size: 15px;
         font-weight: 700;
     }
-    &_delivery {
-        margin: 0 auto;
+    &__delivery {
+        background-color: #ee745e;
+        &:hover {
+            background-color: $main_color;
+        }
     }
 }

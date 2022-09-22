@@ -1,0 +1,17 @@
+.manager {
+    min-height: 340px;
+    padding-top: 60px;
+    background: url('../img/manager.jpg') center (center/cover) no-repeat;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    .title {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .title_sub {
+        font-size: 19px;
+    }
+}

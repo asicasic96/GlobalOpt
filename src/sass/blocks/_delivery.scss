@@ -3,17 +3,25 @@
     margin-top: 58px;
     &__wrapper {
         margin-top: 14px;
-        display: grid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        /* display: grid;
         justify-content: center;
         grid-template: minmax(300px, auto) / repeat(4, 260px);
         grid-auto-rows: minmax(300px, auto);
         column-gap: 35px;
-        row-gap: 15px;
+        row-gap: 15px; */
+    }
+    &__item {
+        margin-top: 15px;
     }
     &__border {
         border: 1px solid #c7c7c7;
         padding: 2px;
         height: 100%;
+        width: 260px;
     }
     &__header {
         width: 100%;
@@ -24,6 +32,10 @@
         text-transform: uppercase;
     }
     &__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         img {
             display: block;
             margin: 15px auto;
@@ -46,8 +58,8 @@
         width: 240px;
     }
     &__butn {
+        display: flex;
         justify-content: center;
-        align-items: center;
-        margin: 0 auto;
+        margin: 10px 0;
     }
 }

@@ -37,6 +37,7 @@ gulp.task('watch', function() {
     gulp.watch("src/img/**/*").on('all', gulp.parallel('images'));
     gulp.watch("src/mailer/**/*").on('all', gulp.parallel('mailer'));
     gulp.watch("src/sass/**/*.css", gulp.parallel('css'));
+    gulp.watch("src/mailer/**/*").on('all', gulp.parallel('mailer'));
 });
 
 gulp.task('html', function () {
@@ -82,4 +83,10 @@ gulp.task('css', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'mailer', 'css'));
+gulp.task('mailer', function () {
+    return gulp.src("src/mailer/**/*")
+        .pipe(gulp.dest("dist/mailer"))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'mailer', 'css', 'mailer'));

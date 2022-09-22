@@ -1,0 +1,60 @@
+.consultation {
+    margin-top: 90px;
+    &__title {
+        margin-top: 55px;
+    }
+    &__wrapper {
+        position: relative;
+        border: 1px solid #c7c7c7;
+        min-height: 166px;
+        padding: 55px 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__img {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, 25%);
+        width: 120px;
+        background-color: #fff;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    input {
+        width: 260px;
+        height: 45px;
+        border-radius: 50px;
+        text-align: center;
+        border-color: #c7c7c7;
+        border-style: solid;
+    }
+    &__butn {
+        position: absolute;
+        width: 200px;
+        background: #fff;
+        top: 85%;
+        button {
+            display: block;
+            margin: 0 auto;
+            width: 180px;
+        }
+    }
+    .error {
+        border-color: $main_color;
+    }
+    label {
+        margin-top: 10px;
+        color: $main_color;
+    }
+}
+
