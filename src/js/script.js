@@ -35,6 +35,7 @@ $(document).ready (function (){
             data: $(form).serialize()
           }).done(function () {
             $(form).find("input").val("");
+            $('#modal').fadeOut('slow');
             $('#thanks').fadeIn('slow');
             $('form').trigger('reset');
           });
@@ -47,6 +48,14 @@ $(document).ready (function (){
 	/* МАСКА ФОРМЫ */
     $("input[name=phone]").mask("+7 (999) 999-99-99",{autoclear: false});
 
+    $('#callme, #callme2, .butn__delivery').on('click', function() {
+      $('#modal').fadeIn('slow');
+  });
+
+  $('.modal-thanks__overlay').on('click', function() {
+      $('.modal-thanks').fadeOut('slow');
+  });
+
     /* Закрытие модального окна Thanks */
 
     $('.modal-thanks__close').on('click', function() {
@@ -57,4 +66,14 @@ $(document).ready (function (){
         $('.modal-thanks').fadeOut('slow');
     });
 
+    $('.modal-o__close').on('click', function() {
+      $('.modal-o').fadeOut('slow');
+  });
+
+  $('.modal-o__overlay').on('click', function() {
+      $('.modal-o').fadeOut('slow');
+  });
+
 });
+
+

@@ -25,6 +25,8 @@
     <meta name="theme-color" content="#ffffff">
     <!-- ------------------------------------------------------------ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Карусель -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -44,7 +46,7 @@
                     <div class="promo__text">Есть вопросы?</div>
                     <a class="promo__tel" href="tel:+79264230100">+7 (926) 423 01 00</a>
                 </div>
-                <div class="col-2 promo__wrapper"><button class="butn">Перезвоните мне</button></div>
+                <div class="col-2 promo__wrapper"><button id="callme" class="butn">Перезвоните мне</button></div>
                 <div class="promo__subtitle">Global Opt - логистика полного цикла из Китая в Россию</div>
                 <div class="promo__title">ДОСТАВКА ГРУЗОВ ИЗ КИТАЯ</div>
                 <div class="promo__title-text">В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА</div>
@@ -73,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="promo__wrbtn"><button class="butn butn_promo">Получить рассчёт</button></div> 
+                <div class="promo__wrbtn"><button id="callme2" class="butn butn_promo">Получить рассчёт</button></div> 
             </div>
         </div>
     </header>
@@ -297,13 +299,77 @@
             <div class="title title_sub">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова.</div>
         </div>
 
+        <div class="gtco-testimonials">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+              <div>
+                <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
+                  <div class="card-body">
+                    <h5>Ronne Galle <br />
+                      <span> Project Manager </span>
+                    </h5>
+                    <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                      impedit quo minus id quod maxime placeat ” </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+                  <div class="card-body">
+                    <h5>Missy Limana<br />
+                      <span> Engineer </span>
+                    </h5>
+                    <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                      impedit quo minus id quod maxime placeat ” </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
+                  <div class="card-body">
+                    <h5>Martha Brown<br />
+                      <span> Project Manager </span>
+                    </h5>
+                    <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                      impedit quo minus id quod maxime placeat ” </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="">
+                  <div class="card-body">
+                    <h5>Hanna Lisem<br />
+                      <span> Project Manager </span>
+                    </h5>
+                    <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                      impedit quo minus id quod maxime placeat ” </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
+
+    <form  action="mailer/smart.php" id="modal" class="modal-o">
+            <div class="modal-o__wrapper">
+                <div class="modal-o__close">&#10006;</div>
+                <div class="modal-o__header">Бесплатная <br> консультация!</div>
+                <!-- <div class="modal-o__footer"><span>к</span>онсультация<span>!</span></div> -->
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш номер телефона" type="tel">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button class="butn modal-o__butn">Отправить заявку</button>
+            </div>
+        
+        <div class="modal-o__overlay"></div>
+    </form>
 
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinputphone.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script>
-    <script src="js/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>
